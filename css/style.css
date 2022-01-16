@@ -1,0 +1,835 @@
+/* comman */
+* { margin: 0;
+    outline: none;
+    box-sizing: border-box;
+    word-spacing: 3px;
+     padding: 0;}
+ 
+ a { text-decoration: none;}
+
+ h1 , h3 { 
+    font-family: 'Noto Nastaliq Urdu', serif;
+    
+ }  
+
+ button , input[type='button']{ cursor: pointer;}
+            
+ .container { margin: auto;  }
+
+
+html { scroll-behavior: smooth; }
+body{ background-color: #EAF4FD; }
+
+
+@media (min-width: 576px) {
+.container {max-width: 540px;		
+}}
+@media (min-width: 768px) { 
+.container {max-width: 730px;
+}}
+@media (min-width: 992px) { 
+.container { max-width: 960px;
+}}
+@media (min-width: 1200px) { 
+.container {max-width: 1160px;
+}}
+
+
+
+
+ /* home */
+main { 
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+
+  
+}
+
+        
+main figure { background-color: #459CD1;
+    background-image: url(../images/pc.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 80%;
+    height: 40%;
+    position: relative;
+    margin: 15px auto 0;
+    z-index: 2 ;
+}
+        
+
+main aside { display: flex;
+    flex-direction: column-reverse;
+    justify-content:  center ;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    position: relative;
+            
+}
+
+ main aside div { text-align: center;
+            padding: 10px ;
+            background-color: white;
+            margin: 5% 0;
+            width: 80%;
+            height: 70% ;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+}
+
+
+main button { margin-bottom: 10px;  
+          padding: 5px;
+          border-radius: 5px;
+          border: none;
+          width: 70%;
+          background-color: #FFA89E;
+          align-self: center;
+          font-size: .8rem;
+          transition: .3s transform ease-out;
+
+}
+main button:hover { transform: scale(1.1) }
+
+h1 { font-size: 1rem;
+     text-align: center;
+     line-height: 2.5rem;
+     font-weight: 400;
+}
+
+
+
+ main aside p { font-size: .8rem;
+          line-height: 1.3rem;
+}
+
+.shape {position: absolute;
+        left: 5%;
+        top: 5%;
+        height: 23%;
+        background-color: #FFA89E ;
+
+ }
+
+@media (min-width: 576px){
+
+ main aside { flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+         
+ }
+ main figure  {
+      width: 45%;
+      height: 70%;
+      position: relative;
+      z-index: 5 ;
+      display: flex;
+      align-items: center;
+     
+}
+
+
+main aside div { height: 70%;
+    display: flex ;
+    flex-direction: column;               
+    background-color: white;
+    justify-content: space-evenly;
+    width: 45%;
+    padding-left: 20px;
+   position: relative;
+    z-index: 5 ;
+}
+
+
+
+
+.shape {   height: 35%;
+            z-index: 1;
+            top: 20%;
+            left: 0;
+            
+}
+
+main h1{ font-size: 1.3rem; }
+
+main p { font-size: .9rem !important;
+  }
+
+main button { width: 60%;
+    font-size: 1.2rem;
+         padding:  10px 15px ;
+}
+
+}
+
+@media (min-width: 1200px){
+   main aside { 
+       justify-content: center  ;
+       position: static;
+    
+}
+main { position: relative; }
+
+
+  main  aside div , aside figure { width: 40%;
+                              margin: 0 3.5% !important;
+                              height: 70%;
+                              width: 40%;
+
+    }
+
+  main  aside div { padding: 30px; }
+
+    .shape {  left: 15%; 
+        top: 25%;
+    width: 50%;}
+}
+
+/* informaton */
+figcaption { background-color: #EAF4FD;   
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+figcaption article{ 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+figcaption article h3 { font-size: 1rem; 
+                        margin-bottom: 1rem;
+}
+figcaption ul { height: 90%;
+               justify-content: space-between;
+               display: flex;
+               flex-direction: column;
+               list-style: none;
+}
+
+figcaption li { margin: 5px 10% 5px 0;
+               line-height: 1rem;
+               font-size: .8rem;
+}
+
+figcaption li::before { 
+    content: "\2022"; 
+    color: #186b9e; 
+    font-weight: bold; 
+    font-size: larger;
+    display: inline-block; 
+    width: .5rem;
+    margin-right: -1rem;
+    
+  }
+
+
+  /* form */
+
+  
+  figcaption  aside {
+      padding: 5px 15px 1px ;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+      width: 100%;
+    }
+    
+    figcaption  aside h3 {
+        text-align: center;
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+figcaption aside  form {
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+     flex-direction:   column  ;
+     border-radius:  7px;
+     border: solid #459CD1  1px;
+     background-color: white;
+
+}
+figcaption aside  form summary{ height: 250px;
+display: flex;
+align-items: center;
+position: relative;
+overflow: hidden;
+padding:  10px 10px 0 ;
+
+}
+
+
+figcaption summary .signin{
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    right: 105%;
+    width: 100%;
+}
+
+figcaption summary .signup {
+    position: absolute;
+    width: 100%;
+    left: 0%;
+}
+
+
+figcaption aside  form summary div {
+    transition: .4s;
+    display: flex;
+    height: 90%;
+    justify-content: space-between ;
+    align-content: space-between;
+     flex-wrap: wrap;
+     width: 100%;
+}
+
+
+
+figcaption aside form  input {
+    padding:  10px ;
+    font-size: .65rem ;
+    width: 100% ;
+    border-radius: 7px;
+    border : none ;
+    transition: .3s ease-out background-color;
+    border: solid #459CD1  1px;
+
+}
+figcaption aside form .half { width: 47%; }
+
+figcaption aside form  figure{ font-size:   .9rem;
+                              text-align: center;
+                              color: #FFA89E;
+                              text-align: center ;
+                              width: 100%;
+}
+figcaption aside form section{ display: flex;
+height: auto;
+flex-direction: row;
+}
+
+figcaption aside  form section  input[type="button"] { font-size: 1rem;    
+                        background-color: white ;
+                        color: black;
+                        border: solid #459CD1  1px;
+                        width: 50% ;
+                         transition: all .5s ease-out;
+                         cursor: pointer;
+}
+
+figcaption aside section input[type="button"]:first-child{   
+   border-radius:0 7px 7px 0; 
+   background-color: #459CD1;
+   color: white;
+  
+ 
+}
+
+
+figcaption aside form section input[type="button"]:last-child{   
+    border-radius: 7px 0 0 6px  ; 
+    border-right: none;
+ }
+ 
+
+figcaption aside form input[type="text"]:focus , figcaption aside form input[type="password"]:focus  
+{ 
+    background-color: #EAF4FD;
+}
+
+figcaption aside form .start , figcaption aside form .sign   {
+    background-color: #459CD1;
+    border: solid #459CD1  1px;
+    transition: background-color .3s ease-out;
+    width: 100%;
+    color: white;
+   border-radius: 7px;
+   font-size: 1rem;
+}
+
+figcaption aside form .start:hover , figcaption aside form .sign:hover {
+    background-color: #186b9e;
+}
+
+
+@media (min-width: 576px){
+    figcaption {  
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+}
+
+figcaption article  , figcaption aside {width: 48%;
+                height: 80%;
+                margin: 0;
+               padding: 0%;
+}
+}
+@media (min-width: 1200px){
+  
+figcaption article  , figcaption aside {width: 40%;
+    height: 85%;
+}  
+
+
+figcaption aside summary   figure { 
+height: 1rem;
+}
+figcaption   h3 { font-size: 1.4rem !important }
+figcaption li { font-size: 1rem;  
+                line-height: 1.7rem;
+}
+
+}
+/* test */
+@keyframes down {
+    0% {height: 0;}
+    100% {height: 100vh;}
+  }
+@keyframes up {
+    0% {height: 100vh;}
+    100% {height:0;}
+  }
+
+@keyframes disapper {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.5);}
+    100% { transform: scale(0);  }
+}
+@keyframes apper {
+    0% {transform: scale(0);}
+    50% {transform: scale(1.5);}
+    100% { transform: scale(1);  }
+}
+
+
+@keyframes bigger {
+    0% {transform: scale(1); }
+    50%{ transform: scale(1.4); }
+    100%{ transform: scale(1); }
+}
+
+
+section { height: 100vh; 
+    position: relative;
+    overflow: hidden;
+    display: none;
+    flex-direction: column;
+}
+
+section nav {
+    position: absolute;
+    width: 100%;
+    top :0;
+    left: 0;
+    height: auto;
+    background-color: #459CD1;
+    cursor: pointer;
+    z-index: 3;
+   
+
+}
+
+section nav aside {  text-align: center;
+                     font-size: 2.3rem;
+                     color: #FFA89E;
+                     display: flex;
+                     justify-content: center;
+                     align-self: flex-end;
+                     max-height: 15%;
+                     transition: .4s background-color;
+
+}
+
+section nav aside  figure  { 
+               animation-duration: 1s;
+               padding-top: 5px;
+               transition: ease-out .3s background-color;
+               
+}
+
+section nav aside:hover  { background-color: #186b9e }
+
+
+section nav  > div {  display: flex;
+                    justify-content: space-evenly;
+                    flex-wrap: wrap;
+                    overflow: hidden;
+                    animation-duration: .5s;
+                    animation-timing-function: ease-out ;
+                    align-items: flex-start;
+                    align-content: flex-start;
+                    background-color:#459CD1 ;
+                    height: 0;
+                    width: 100%;
+                    position: absolute;
+                    z-index: 2;
+
+
+}
+
+
+
+section nav div p { width: 60px ;
+                   line-height: 60px;
+                   background-color: #FFA89E;
+                   color: black ;
+                   border-radius: 50%;
+                   text-align: center;
+                   cursor: pointer;
+                   margin: 10px;
+                   transition: .4s ease-in-out all ;
+                 
+                  animation-duration: 1s;
+}
+
+section nav div p:hover {
+    box-shadow: 0px 0px 15px 5px  rgba(0, 0, 0, 0.199);
+    transform: scale(1.1);
+}
+
+
+
+
+section .answer button input {  display: none;  }
+
+.data { display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 45%;
+}
+
+.data aside { width: 30px;
+             height: 30px ;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             cursor: pointer;
+             background-color: #459CD1;
+             color: white;
+             border-radius: 50%;
+             margin-left: 1rem;
+
+}
+.data p { width: 85%;
+        font-size: 1rem;
+          line-height: 1.5rem;
+}
+
+.item { background: white; 
+    padding: 10px 20px  ;
+    height: 40vh;
+    width: 80%;
+    border-radius: 10px ;
+    border: #459CD1 solid 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: space-between;
+    
+}
+
+.item > p { 
+color: #459CD1;
+text-align: center;
+font-size: .8rem;
+}
+
+.answer { display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+
+}
+
+.answer button { width:  47%  ;
+                 padding: 10px;
+                 margin: 0 ;
+                 border-radius: 7px;
+                 border: none;
+                 color: white;
+                 font-weight: 800;
+                 transition: .2s all ease-out;
+
+
+}
+
+
+.btn { display: flex;  
+    width: 80%;
+    justify-content: space-between;
+    
+}
+
+.btn button , section button  {  width: 35%;
+                 border-radius: 7px;
+                 border: none;
+                 color: white;
+                 transition: .3s all ease-out;
+                 background-color: #459CD1;
+                 padding: 10px ;
+
+}
+
+section header button { width: 75%; }
+
+section button:hover { background-color: #186b9e; }
+.btn button i { position: relative;
+    transition: all ease-out .4s;
+}
+.btn button:nth-child(2) { width: 15%;}
+
+.btn button:first-child:hover i  { margin: 0 -1rem 0 1rem ; }
+.btn button:last-child:hover i  { margin: 0 1rem 0 -1rem ; }
+
+.time { display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15%;
+        font-size: 1.5rem;
+   
+}
+
+.time button {width: 35%;
+            display: none;
+            animation-duration: 1s;
+}
+
+header {  height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+}
+
+
+@media (min-width: 576px){
+section {
+         justify-content: center;
+         align-items: flex-end;
+}
+
+section nav { width: 35%; 
+    right: 0%;
+     
+}
+
+section nav div { display: flex;
+    height: 100vh;
+    padding: 20px 0;
+    z-index: -1;
+}
+section header { width: 50%; }
+
+
+section .item{ 
+           justify-self: flex-end;
+}
+
+
+}
+@media (min-width: 1200px){
+
+section { justify-content: space-between; }
+
+section nav{ width: 25%; }    
+
+header{ 
+       align-self: flex-start;
+       margin:0 35% ;
+       padding: 0 5%;
+
+}
+
+.data p { line-height: 2rem; 
+     
+        
+}
+.item > p:last-child{
+    line-height: 2rem; 
+        font-size: 1rem;
+        
+}
+
+}
+
+/* footer */
+footer{ 
+        height: 100vh;
+        display: none;
+        flex-direction: column;
+        justify-content: space-around;
+       
+
+}
+
+footer > div{ 
+display: flex;
+flex-direction: column;
+width:95%;
+justify-content: space-around;
+height: 90%;
+}
+
+footer .result {
+height: 70%;
+display: flex;
+margin: 0 5%;
+flex-direction: column;
+justify-content: space-evenly;
+}
+
+footer span { color: #459CD1;
+              font-weight: 800;
+}
+
+footer .result  .area { 
+        background-color: rgb(255, 255, 255) ;
+        padding: 15px;
+        border: solid #459CD1 1px;
+        border-radius: 7px;
+        text-align: center;
+        line-height: 1.5rem;
+       
+     
+}
+
+
+
+footer a { color: #186b9e;
+            font-size: .8rem;
+            font-weight: 600;
+            margin-right: 10px;
+            line-height: 1.8rem;
+            padding: 5px;
+            transition: .5s;
+}
+
+footer a:hover { border-bottom: #459CD1 solid 1px; }
+
+footer .img {
+    width: 85px;
+    height: 85px;
+    background-image: url(../images/salahHaron.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+ 
+}
+
+footer .card { 
+    border: solid 1px #459CD1;
+    display: flex;
+    flex-direction: row;
+    height: 30%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #459CD1;
+    border-radius: 7px;
+    padding: 10px;
+    margin:5px  5% 5%;
+}
+
+footer .card div:last-child {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+footer .card h3 { font-size: 1rem;
+                  line-height: 1.8rem;
+                  text-align: center;
+                  color: white;
+                  margin: 10px 0;
+}
+footer .card p { line-height: 1.3rem;  
+    text-align: center;
+    font-size: .9rem;
+                
+}
+
+
+
+
+
+
+
+footer > p{ background-color: #FFA89E;
+    padding: 3px;
+width: 100%;
+align-self: flex-end;
+text-align: center;
+}
+
+
+
+@media (min-width: 850px){
+    footer  div {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    footer .result { width: 40%;
+                    align-items: flex-start;
+    }
+
+
+
+    footer .card { flex-direction: column; 
+                  height: 60%;
+                  justify-content:space-evenly;
+    }
+
+    footer .card h3 { font-size: 1.5rem; 
+        line-height: 3rem;
+                     
+    }
+
+    footer .card div:last-child { 
+                                 height: 60%;
+    }
+
+    footer .result p:first-child{ font-size: 1.3rem; 
+
+    }
+
+    footer .result h3 { font-size: 1.7rem;
+                        
+    }
+
+
+
+}
+
+
+
+
+
