@@ -1,0 +1,172 @@
+<!doctype html>
+<html dir="rtl" lang="ar">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> depression test </title>
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+   <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/icon.png">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+
+   <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa&display=swap" rel="stylesheet">
+
+
+    </head>
+    <body align="right" onkeyup="active(event)"  onresize="recover()" >
+        <main  class="container-fluid" >
+            <aside class="container" >
+                
+                <div>
+                    <h1>   التشخيص النفسي للإكتئاب </h1>
+                    <p>
+                    
+                        الاكتئاب هو أكثر الامراض النفسية شيوعا
+                     وهو حالة من الحزن العميق يشعر بها الشخص بعدم الرضاوعدم القدرة علي ممارسة النشاطات الطبيعية وصعوبة بالتركيز  
+                    </p>
+                    <p> وهنا كان الهدف الاساسي لذلك الاختبار لمعرفة اذا كنت مصابا بالاكتاب ام  بعض الانفعالات العبرة اتجاه الحياة اليومية  </p>
+                    <button> هيا نبدأ </button>
+                </div>
+
+                <figure>
+                
+                </figure>
+                
+                <div class="shape" ></div>
+            </aside>
+
+        </main>
+
+
+        <figcaption  class="container intro" >
+            <article>
+                <h3> ملاحظات هامه </h3>
+                <ul>
+                    <li> هذا المقياس مقتبس من اختبار الشخصية متعددة الأوجه  ( مينسوتا MMPI ).   </li>
+                    <li>  المقياس لراشدين والمراهقين  ما فوق سن الخمسة عشر عاما ولا يعطي نتائج دقيقة لمن هو أقل من ذلك.  </li>
+                    <li> يتكون ذلك الإختبار من عدة عبارات أقر كل عبارة وقرر إذا كانت تنطبق عليك اضغط علي نعم واذا كانت غير ذلك إضغط علي لا.  </li>
+                    <li> تذكر أن المطلوب منك هو التعبير عن نفسك أنت.   </li>
+                    <li> يمكنك أن تضغط علي علامة القلم بجانب كل سؤال حتي تتاكد من  اجابته  مرة اخري  </li>
+                    <li>  يتكون ذلك الاختبار من ستون سؤلاّ يجب حلهم في أقل من ثلثون دقيقة  .  </li>
+                    <li>  لن يتم عرض النتيجة ال بحل الاسئلة كلها خلال الوقت المحدد حتي تكون النتيجة دقيقة  </li>
+                    <li>  الهدف من الوقت هو عدم جعلك تفكر كثيرا بالإجابة وتعطي إجابات شعورية. </li>
+                    <li> يجب معرفة أنه لا أحد يطلع علي إجابتك غيرك فقط ولا تصل النتائج لأي جهه. </li>
+                    <li> حاول ان تسترخي وأن تكون في بيئة هادئة تسمح لعمل ذلك الاختبار.</li>
+                </ul>
+            </article>
+
+            <aside>             
+                <form>        
+                     <h3> انشاء حساب </h3>         
+                    <section>
+                        <input onclick="right(this)"  type="button" value=" إنشاء حساب ">
+                        <input onclick="left(this)"  type="button" value=" تسجيل دخول  ">
+                    </section>
+               
+                   
+                    <summary>
+                        <div class="signup">
+                            <input type="text" class="half"  placeholder="ادخل الإسم الأول "   name="fristName" >
+                            <input type="text" class="half"  placeholder="أدخل الإسم الثاني"  name="lastName ">
+                          
+                            <input type="password"class="half"  placeholder=" ادخل الرقم السري " name="password" >
+                            <input type="password"class="half"  placeholder="أعد إدخال الرقم السري" name="repassword">
+                         
+                            <input type ="text" placeholder="أدخل البريد الإلكتروني "  name="email">
+                            <input class="sign" type="button" value="تسجيل">
+                            <figure>
+                                <!-- vaildation area -->
+                            </figure>
+                        </div>
+
+                        <div class="signin">
+                            <input type ="text" placeholder="أدخل البريد الإلكتروني "  name="email">
+                            <input type="password"  placeholder=" ادخل الرقم السري " name="password" >
+                            <input  class="start" type="button" value="تسجيل">
+                            <figure>
+                                <!-- validation area -->
+                            </figure>
+                        </div>
+                    </summary>
+
+                </form>
+            </aside>
+        </figcaption>
+
+        <section >
+            <nav>
+                <aside> <figure><i class="ri-mark-pen-fill"></i></figure></aside>      
+                <div>  
+                    <!-- mark quetions from js  -->
+                </div>
+            </nav>
+
+        <header>
+            <div class="time"> 
+                <span>  0 : 40 </span> 
+                <button class="back"  > عرض الأجابة </button>
+                
+             </div>
+            <div  class="item" >
+                <div class="data" >
+                    <aside>0 </aside>
+                    <p>    </p>
+                </div>
+                <div class="answer" >
+                    <button> <input type="radio" name="one" value="yes"> نعم </button> 
+                    <button> <input type="radio" name="one" value="no"> لا </button> 
+                </div>
+                <p></p>
+            </div>
+            <div class="btn">
+                <button class="prives"  > <i class="ri-arrow-right-fill"> </i><b> السابق </b> </button>
+                <button class="mark"   >  <p><i class="ri-mark-pen-fill"></i>  </p>  </button> 
+                <button  class="next"  ><b> التالي </b><i class="ri-arrow-left-fill"></i>    </button> 
+
+            </div>
+        </header>
+           
+
+
+
+        </section>
+        <footer>
+            <div class="container" >
+                <div class="result" >
+                    <p><span> راندا محمد  </span> درجة الاكتئاب لديك تعتبر </p>
+                    <h3 >  </h3>
+                    <p class="area" >
+                <!-- js data -->
+                    </p>
+                    <div class="info" >
+                          <i>اليك ايضا   </i>
+                       <br> <a href="https://www.who.int/ar/news-room/fact-sheets/detail/depression" target="_blank"> معلومات اكثر عن الإكتئاب </a>
+                       <br> <a href="http://www.emro.who.int/mhps/ar/mental_health_professionals.html" target="_blank">  التحدث مع أخصائي نفسي </a>
+                    </div>
+    
+                </div>
+                <div class="card">
+                    <div class="img" > 
+                         
+                    </div>
+                    <div>
+                        <b>  اهداء الي </b>
+                        <h3>  د/ صلاح هارون <br>رحمه الله</h3>
+                        <p> من علمني أن إنسانيتنا سلوكا اكثر منه مصطلحا لغويا </p>
+                    </div>
+                </div>
+            </div>
+            
+            <p> made by <a target="_blank" href="https://www.linkedin.com/in/randa-mohamed1295/" > Randa Mohamed </a> </p>
+        </footer>
+        
+        <script src="data.js" ></script>
+        <script src="control.js"></script>
+    </body>
+
+</html>
