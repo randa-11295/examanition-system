@@ -3,6 +3,7 @@ let mark = false;
 document.querySelectorAll('section nav aside')[0].onclick = function(){
     updown ();
 }
+//randa
 function updown(){
     if(innerWidth < 576){
         if( mark == false){
